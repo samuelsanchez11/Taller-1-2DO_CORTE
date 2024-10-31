@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+
+    <style>
+        img {
+            max-width: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienbenido al Sitio de Deadpool.</h1>
+    <p>Explora las siguientes paginas para conocer mas sobre Deadpool y sus frases memorebles.</p>
+    <h2>Menu de Navegación</h2>
+    <ul>
+        <li><a href="html/ejercicio1.html">Personajes principales</a></li>
+        <li><a href="html/pagina2.html">Frases Memorables</a></li>
+        
+    </ul>
+    <h2>¿Quien es Deadpool?</h2>
+    <p>Deadpool, tambien conocido como <strong>Wade Wilson</strong>, es un anti héroe de Marvel conocido por su humor sarcastico y sus habilidades de combate.</p>
+    
+    <div id="imageContainer"></div>
+
+    <script>
+        var images = [
+            "recursos/imagen1.jpg",
+            
+        ];
+
+        var imageContainer = document.getElementById('imageContainer');
+
+        images.forEach(image => {
+            var imgElement = document.createElement('img');
+            imgElement.src = image;
+            imgElement.alt = 'Imagen de Deadpool';
+            imageContainer.appendChild(imgElement);
+        });
+    </script>
+     
+
+</body>
+</html>

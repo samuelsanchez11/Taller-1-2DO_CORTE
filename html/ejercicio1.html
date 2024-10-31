@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes Principales</title>
+    <style>
+        img {
+            max-width: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><strong>Personajes Principales de Deadpool</strong></h1>
+    <h2><strong>Deadpool (Wade Wilson)</strong></h2>
+    <p>Deadpool, tambien conocido como <strong>Wade Wilson</strong>, es el protagonista de la película. Es un mercenario con un sentido del humor único y habilidades de combate excepcionales.</p>
+
+    <div id="imageContainer"></div>
+
+    <script>
+        var images = [
+            "../recursos/imagen1.jpg",
+            
+        ];
+
+        var imageContainer = document.getElementById('imageContainer');
+
+        images.forEach(image => {
+            var imgElement = document.createElement('img');
+            imgElement.src = image;
+            imgElement.alt = 'Imagen de Deadpool';
+            imageContainer.appendChild(imgElement);
+        });
+    </script>
+     
+
+    <h3><strong>Vanessa</strong></h3>
+
+    <p><em>Vanessa Carlysle</em> es la novia de Wade Wilson. Esuna figura clave en la vida de Deadpool y su motivación principal en la historia.</p>
+
+    <div id="imageContainer2"></div>
+
+    <script>
+        var images = [
+        "../recursos/imagen2.jpg"
+        ];
+
+        var imageContainer = document.getElementById('imageContainer2');
+
+        images.forEach(image => {
+            var imgElement = document.createElement('img');
+            imgElement.src = image;
+            imgElement.alt = 'Imagen de Deadpool';
+            imageContainer.appendChild(imgElement);
+        });
+    </script>
+
+    <h3>Calossus</h3>
+
+    <p >Colossus, también conocido como <span style="border-bottom: dashed;" title="Colossus">Coloso</span>, es un miembro de los X-Men que intenta guiar a Deadpool hacia un camino más heroico.</p>
+
+    <div id="imageContainer3"></div>
+
+    <script>
+        var images = [
+        "../recursos/imagen3.jpg"
+        ];
+
+        var imageContainer = document.getElementById('imageContainer3');
+
+        images.forEach(image => {
+            var imgElement = document.createElement('img');
+            imgElement.src = image;
+            imgElement.alt = 'Imagen de Deadpool';
+            imageContainer.appendChild(imgElement);
+        });
+    </script>
+
+    <p>Estos son algunos de los personaje memorables de la película <em>Deadpool.</em></p>
+
+    <a href="../html/pagina2.html"></a>
+
+</head>
+<body>
